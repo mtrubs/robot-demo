@@ -1,0 +1,25 @@
+<project xmlns="http://maven.apache.org/POM/4.0.0"
+         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+    <modelVersion>4.0.0</modelVersion>
+    <packaging>jar</packaging>
+    <name>Robot: Acceptance</name>
+    <groupId>com.millennialmedia.robot</groupId>
+    <artifactId>demo</artifactId>
+    <version>1.0</version>
+    <properties>
+        <!-- project directories -->
+        <robot.dsl>src/dsl</robot.dsl>
+        <robot.features>src/features</robot.features>
+    </properties>
+    <build>
+        <resources>
+            <resource>
+                <directory>${robot.dsl}</directory>
+            </resource>
+            <resource>
+                <directory>${robot.features}</directory>
+            </resource>
+        </resources>
+    </build>
+</project>
