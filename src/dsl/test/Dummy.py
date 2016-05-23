@@ -1,6 +1,6 @@
-class Demo:
+class Dummy:
     def __init__(self):
         pass
 
-    def demo_result1(self):
+    def dummy(self):
         assert True
